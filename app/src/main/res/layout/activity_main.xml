@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="8dp"
+    android:background="#FF6D00"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnToStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="К сохраненным" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listAnime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        android:background="#03A9F4">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:queryHint="search city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
